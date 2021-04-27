@@ -5,5 +5,82 @@
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 黑體-繁, Apple LiGothic Medium, PingFang, 微軟正黑體, Microsoft JhengHei, WenQuanYi Zen Hei, helvetica, Arial, sans-serif;
+  font-family: Verdana,黑體-繁, Apple LiGothic Medium, PingFang, 微軟正黑體, Microsoft JhengHei, WenQuanYi Zen Hei, helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+::-moz-selection {
+  background: transparent;
+  color: #cfc;
+}
+
+::selection {
+  background: transparent;
+  color: #cfc;
+}
+
+#web {
+  width: 100%;
+  height: auto;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a18cd1), to(#fbc2eb));
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.topic {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 5vmin;
+  letter-spacing: 5px;
+}
+
+.parallex {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg1, .bg2, .bg3 {
+  height: 40vmin;
+  background: url(https://picsum.photos/1920/1080/?random=1) no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-box-shadow: 6px 6px 8px #0012;
+          box-shadow: 6px 6px 8px #0012;
+  opacity: 0.75;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bg1:hover, .bg2:hover, .bg3:hover {
+  opacity: 0.95;
+}
+
+.bg1 {
+  width: 100%;
+  height: 50vmin;
+}
+
+.bg2 {
+  width: 40%;
+  margin-left: auto;
+}
+
+.bg3 {
+  width: 70%;
+  margin-right: auto;
 }
