@@ -41,9 +41,55 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #fff;
   font-size: 5vmin;
   letter-spacing: 5px;
+}
+
+.topic div {
+  width: 87%;
+  margin: auto;
+  font-size: 1.45vmin;
+  letter-spacing: 3px;
+  word-break: break-all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topic span {
+  padding: 2vmin 3vmin;
+  border-radius: 4px;
+  position: relative;
+}
+
+.topic span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1vmin;
+  left: 0;
+  width: 20%;
+  height: 1vmin;
+  background: #fffc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  will-change: top, left;
+}
+
+.topic span:hover::before {
+  top: 105%;
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .parallex {

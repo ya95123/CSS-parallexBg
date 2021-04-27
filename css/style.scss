@@ -27,10 +27,50 @@ html,body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   color: #fff;
   font-size: 5vmin;
   letter-spacing: 5px;
+
+  div {
+    width: 87%;
+    margin: auto;
+    font-size: 1.45vmin;
+    letter-spacing: 3px;
+    word-break: break-all;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  span {
+    padding: 2vmin 3vmin;
+    border-radius: 4px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -1vmin;
+      left: 0;
+      width: 20%;
+      height: 1vmin;
+      background: #fffc;
+      transition: 0.5s;
+      will-change: top, left;
+    }
+
+    &:hover::before{
+      // width: 80%;
+      top: 105%;
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+
 }
 
 .parallex {
